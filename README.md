@@ -1,16 +1,13 @@
-# Task 2: Feature Engineering & Preprocessing Pipeline
+# Task 3: Supervised Classification / Regression Modeling & Tuning
 
-This submission implements the requirements shown in the internship task:
-- tabular dataset loading
-- train/test split before transformations
-- numerical imputation and scaling
-- categorical imputation and one-hot encoding
-- reusable `ColumnTransformer` + `Pipeline`
-- correlation analysis
-- tree-based feature importance
-- mutual-information ranking
-- leakage-prevention checklist
+This notebook addresses the task requirements shown on the learning desk:
+- at least 4 distinct model architectures
+- GridSearchCV with stratified K-fold cross-validation
+- Precision, Recall, F1, ROC-AUC and confusion matrix
+- ROC-AUC curves
+- validation-based champion model selection
+- serialized champion model (`champion_model.joblib`)
 
-The task page provides example dataset types but no official dataset file. Therefore the notebook uses the public Titanic tabular dataset from OpenML.
+The task page does not show an official dataset file. The notebook therefore reuses the public Titanic tabular dataset from OpenML, consistent with Task 2.
 
-Run the notebook in Jupyter Notebook, JupyterLab, Google Colab, or VS Code with internet access because the dataset is fetched from OpenML.
+Run the notebook in Jupyter/Colab/VS Code with internet access. After execution, the notebook will generate `champion_model.joblib`.
