@@ -1,13 +1,14 @@
-# Task 3: Supervised Classification / Regression Modeling & Tuning
+# Task 5: Deep Learning / NLP Text Classifier with PyTorch
 
-This notebook addresses the task requirements shown on the learning desk:
-- at least 4 distinct model architectures
-- GridSearchCV with stratified K-fold cross-validation
-- Precision, Recall, F1, ROC-AUC and confusion matrix
-- ROC-AUC curves
-- validation-based champion model selection
-- serialized champion model (`champion_model.joblib`)
+This submission addresses the task requirements:
+- TF-IDF text vectorization
+- multi-layer neural network
+- dropout
+- batch normalization
+- early stopping
+- training/validation loss and accuracy curves
+- unseen text inference with classification confidence
 
-The task page does not show an official dataset file. The notebook therefore reuses the public Titanic tabular dataset from OpenML, consistent with Task 2.
+Dataset: binary subset of the public 20 Newsgroups dataset (`sci.space` and `rec.sport.baseball`).
 
-Run the notebook in Jupyter/Colab/VS Code with internet access. After execution, the notebook will generate `champion_model.joblib`.
+Run the notebook in Jupyter, Google Colab, or VS Code. The notebook downloads the public dataset through scikit-learn and requires PyTorch, scikit-learn, pandas, NumPy, matplotlib, and joblib.
